@@ -15,6 +15,7 @@
     "dist",
     ".stackbit/**",
     "src/.stackbit/**",
-    "stackbit.config.ts"
+    "stackbit.config.ts",
+    "src/content/**"
   ]
 }
