@@ -5,16 +5,19 @@ export default defineStackbitConfig({
   stackbitVersion: '~0.6.0',
   ssgName: 'custom',
   nodeVersion: '18',
+  devCommand: 'npm run dev -- --port 3000 --host {HOSTNAME}',
   contentSources: [
     new GitContentSource({
-      rootPath: '.', // project root
+      rootPath: './src', // project root
       // Adjust to your theme’s content path:
-      contentDirs: ['src/content', 'content'],
+      contentDirs: ['src/content'],
       models: [
         {
           name: 'post',
+          type: 'page',
           label: 'Post',
-          filePathPattern: 'src/content/blog/**/*.md*',
+          urlPath: '/blog/{slug}',
+          filePath: 'blog/{slug}.md*',
           fields: [
             { name: 'title', type: 'string', required: true },
             { name: 'date', type: 'date', required: true },

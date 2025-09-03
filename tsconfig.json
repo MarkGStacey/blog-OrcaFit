@@ -6,6 +6,15 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "strictNullChecks": true
-  }
+    "strictNullChecks": true,
+    "skipLibCheck": true
+  },
+  "include": ["src", "astro.config.*", "env.d.ts", "types/**/*.d.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".stackbit/**",
+    "src/.stackbit/**",
+    "stackbit.config.ts"
+  ]
 }

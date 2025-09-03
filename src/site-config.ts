@@ -52,6 +52,10 @@ export const siteConfig = {
         href: '/blog/notes',
       },
       {
+        text: 'Exercises',
+        href: '/blog/exercises',
+      },
+      {
         text: 'Talks',
         href: '/blog/talks',
       },
@@ -70,6 +74,10 @@ export const siteConfig = {
       {
         text: 'Notes',
         href: '/blog/notes',
+      },
+      {
+        text: 'Exercises',
+        href: '/blog/exercises',
       },
       {
         text: 'Talks',
